@@ -167,6 +167,12 @@ Once the configuration file has been created, you may update the Supervisor conf
 
 For more information on Supervisor, consult the [Supervisor documentation](http://supervisord.org/index.html).
 
+#### Restarting Supervisor
+
+When deploying fresh code to your server, restart the supervisor service to terminate any running horizon services and reload the application:
+
+    sudo supervisorctl restart
+
 <a name="tags"></a>
 ## Tags
 
